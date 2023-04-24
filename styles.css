@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  background-color: #eef0f4;
+}
+
+#input-wrapper,
+#app-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#input-wrapper {
+  width: 100%;
+  border: 4px solid black;
+  border-radius: 10px;
+  padding: 4rem 0;
+}
+
+#app-wrapper {
+  max-width: 320px;
+  margin-top: 1rem;
+}
+#input-field {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  background-color: #b3eff5;
+  text-align: center;
+  cursor: context-menu;
+}
+
+#input-field:focus {
+  outline: none;
+}
+
+#add-btn {
+  width: 82%;
+  background-color: #b62c89;
+  color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#add-btn:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+
+#add-btn:active {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#input-field,
+#add-btn {
+  line-height: 3rem;
+  font-size: large;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  border: 0;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: 100%;
+  max-width: 320px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0%;
+}
+li {
+  list-style-type: none;
+  flex-grow: 1;
+  background-color: bisque;
+  color: #b62c89;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  line-height: 3rem;
+
+  font-family: 'Rubik', sans-serif;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+li:hover {
+  cursor: pointer;
+  background-color: #b62c89;
+  color: black;
+}
+
+.task-container {
+  flex-grow: 1;
+  background-color: bisque;
+  color: #b62c89;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.task-container:hover {
+  cursor: pointer;
+  background-color: #b62c89;
+  color: black;
+}
